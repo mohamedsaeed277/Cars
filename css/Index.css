@@ -1,0 +1,972 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+textarea{
+    resize:none;
+}
+a{
+    color:unset;
+    text-decoration: none;
+}
+li{
+    list-style:none;
+}
+a:hover{
+    text-decoration: none;
+    list-style:none;
+}
+body,html{
+    scroll-behavior:smooth;
+    position:relative;
+    overflow-x:hidden;
+}
+h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.42857143;
+    color:#333333;
+}
+h3{
+    font-size:22px;
+}
+.color-white{
+    color:#fff;
+}
+.color-blue{
+    color:#1d5ea8;
+}
+.color-ban{
+    color:darkgrey;
+}
+/* start modal */
+.modal-header{
+    background-color:#1d5ea8;
+    border-color: #1d5ea8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.42857143;
+}
+.modal-header h5,
+.modal-header .close{
+    color:#fff;
+}
+.modal-body h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.42857143;
+    color: #1d5ea8;
+    margin-bottom:10px;
+    margin-top:20px;
+    font-size:22px;
+}
+.modal-body form input{
+    margin-bottom:20px;
+}
+.modal-body form button{
+    background-color:#1d5ea8;
+    color:#fff;
+    border:none;
+    padding:8px 20px;
+    margin-top:30px;
+    transition:all .4s;
+}
+.custom-control {
+    padding-left: 2.5rem;
+}    
+/* end modal */
+
+/* start header */
+.header{
+    background-color:#333333;
+}
+.header .information{
+    display:flex;
+    text-align:center;
+    align-items:center;
+}
+.header .information .phone{
+    margin-right:30px;
+}
+.header .icons{
+    display:flex;
+    justify-content:flex-end;
+    text-align:center;
+    align-items:center;
+}
+.header .icons .icon i{
+    margin-left:20px;
+    cursor:pointer;
+} 
+.header .icons .quote{
+    margin-left:30px;
+    background-color:#1d5ea8;
+    color:#fff;
+    border:none;
+    padding:8px 20px;
+    transition:all .4s;
+}
+.header .icons .quote:hover{
+    background-color:#276bb9;
+}
+@media(max-width:992px){
+ .header .information{
+     margin-top:10px;
+     margin-bottom:10px;
+     margin-left:180px;
+    }
+    .header .icons{
+        margin-left:-138px;  
+        margin-bottom:10px;
+   }
+}
+@media(max-width:768px){
+    .header .information{
+        margin-left:0px;
+   }
+   .header .icons{
+    margin-left:-100px;  
+}
+}
+/* end header */
+
+/* start navbar*/
+.navbar-light .navbar-nav .nav-link{
+    color:#000;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#276bb9;
+}
+/* end navbar */
+
+/* start slider */
+.contentt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+    height: 100vh;
+    background: #333 url('../images/bg2.jpeg') no-repeat center center / cover;
+}
+.contentt h1{
+    color: #ccc;
+    font-weight: 200;
+    margin: 0.4rem;
+    font-size: 3.5rem;
+}
+.contentt h2{
+    font-weight:200;
+    margin:0.4rem;
+    font-size:2rem;
+    color:#aaa;
+}
+/* end slider */
+
+/* Best Car Repair Center */
+.repair-cen{
+    margin-top:50px;
+}
+.repair-cen .paragraph1{
+    font-size:17px;
+    color:#666666;
+    font-family:'Raleway', sans-serif;
+    line-height:1.42857143;
+    font-weight:500 !important;
+}
+.repair-cen .paragraph2{
+    line-height: 1.7;
+    color: #888686;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.repair-cen .btn1,
+.repair-cen .btn2{
+    margin-bottom:30px;
+    font-size: 14px;
+    padding: 10px 26px;
+}
+.repair-cen .btn1{
+    color: #fff;
+    background-color: #276bb9;
+    border-color: #276bb9;
+}
+.repair-cen .btn1:hover{
+    color: #fff;
+    background-color: #2273cf;
+}
+.repair-cen .btn2{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.repair-cen .btn2:hover{
+    color: #333;
+    background-color: #ccc;
+    border-color: #fff;
+}
+.imgs1{
+    margin-bottom:15px;  
+}
+.imgs2{
+    width:310px;
+    height:175px;
+    margin-bottom:15px;  
+}
+@media(max-width:992px){
+   .paragraph2{
+       display: none;
+   }
+   .imgs2{
+    width:260px;
+    margin-left:90px; 
+}
+}
+@media(max-width:768px){
+    .imgs2{
+     margin-left:0px;
+     width:310px;
+ }
+ }
+/* Best Car Repair Center */
+.our-features{
+    margin-top:80px;
+    padding:50px;
+    background-color:#F7F8FA;
+}
+.our-features p{
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.our-features h2{
+    color:#1d5ea8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.42857143;
+    font-size:2rem;
+}
+.our-features h2 span{
+    color:#333333;
+}
+.our-features .our-row{
+    display:flex;
+}
+.our-features .featur{
+    background-color:#fff;
+    padding:43px;
+    margin:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    border:3px solid #eeeeee;
+}
+.our-features .featur:hover{
+    background-color:#1d5ea8;
+}
+.our-features .featur .texts p,
+.our-features .featur .texts h3,
+.our-features .featur .icons i{
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease-in-out;
+}
+.our-features .featur:hover .texts p,
+.our-features .featur:hover .texts h3,
+.our-features .featur:hover .icons i{
+    color:#fff;
+}
+.our-features .featur .icons{
+    margin-right:30px;
+    font-size: 40px;
+    font-weight: 800;
+    color:#1d5ea8;
+}
+.our-features .featur .texts h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.42857143;
+    color: #333333;
+    font-size:16px;
+}
+.our-features .featur .texts h3{
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align:left;
+}
+@media(max-width:992px){
+    .our-features .our-row{
+        display:flex;
+        flex-direction:column;
+    }
+}
+/* start clients */
+.clients{
+    background-image:url(../images/bg6.jpeg);
+    width:100%;
+    height:60vh;
+    background-size:cover;
+    position:relative;
+    background-attachment:fixed;
+    margin-bottom:80px;
+}
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, .7);
+}
+.clients .clien{
+    z-index:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+.clients .clien .text{
+    color:#fff;
+    margin-right:-100px;
+}
+.clients .clien .text i{
+    font-size:2.28571429rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+.clients .clien .text h2{
+    margin-top:8px;
+    margin-bottom:15px;
+    color:#1d5ea8;
+    font-size: 2.57142857rem;
+    font-weight:bold;
+}
+.clients .clien .text h5{
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.42857143;
+    font-size:14px;
+}
+@media(max-width:768px){
+   .Dnone{
+      display:none; 
+   }
+   .clients{
+      height:90vh; 
+   }
+   .clients .clien .text{
+    margin-top:20px; 
+   }
+}
+/* end clients */
+
+/* start .our-mechanic */
+.our-mechanic{
+    margin-top:80px;
+    padding:50px;
+    background-color:#F7F8FA;
+}
+.our-mechanic p{
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.our-mechanic h2{
+    color:#1d5ea8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.42857143;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+.our-mechanic h2 span{
+    color:#333333;
+}
+.our-mechanic .card{
+    margin-bottom:16px;
+}
+.our-mechanic .card-body h5,
+.our-mechanic .card-body h6,
+.our-mechanic .card-body .icons{
+    text-align:center;
+}
+.our-mechanic .card-body .icons{
+    display:flex;
+    justify-content: space-evenly;
+}
+.our-mechanic .card-body .icons i{
+   font-size:30px;
+   background-color: #fff;
+    color: #1d5ea8;
+    cursor: pointer;
+    margin-right:6px;
+}
+.our-mechanic .card-body .icons i:hover{
+     color: #126acf;
+}
+/* end .our-mechanic */
+
+/* start our-pricing */
+.our-pricing{
+    margin-top:80px;
+    padding:50px;
+    background-image:url(../images/p6.png);
+    width:100%;
+    height:130vh;
+    background-size:cover;
+}
+.our-pricing p{
+    line-height: 1.7;
+    color: #818080;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom:40px;
+}
+.our-pricing h2{
+    color:#1d5ea8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.42857143;
+    font-size:2rem;
+    margin-bottom:18px;
+}
+.our-pricing h2 span{
+    color:#000000;
+}
+.our-pricing .card{
+    margin-bottom:16px;
+    border:10px solid #f2f2f2;
+    transition:.3s ease-in-out;
+}
+.our-pricing .card:hover{
+    transform:translateY(10px);
+}
+.our-pricing .card h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.42857143;
+    color: #333333;
+    margin-top:40px;
+}
+.our-pricing .card h1{
+    color: #1d5ea8;
+    font-size:46px;
+    font-family: 'Trirong', serif;
+    font-weight:700;
+}
+.our-pricing .card h1 span{
+    color: #d9d9d9;
+    vertical-align: super;
+    font-size:24px;
+}
+.our-pricing .card ul{
+    padding: 10px 0 10px 20px;
+}
+.our-pricing .card ul li{
+    font-size: 12px;
+    padding: 10px 0;
+}
+.btn-theme-colored{
+    color: #fff;
+    background-color: #1d5ea8;
+    border-color: #1d5ea8;
+}
+.btn-theme-colored:hover{
+    color: #fff;
+    background-color: #1567c4;
+}
+/* end our-pricing */
+
+.our-product{
+    margin-top:80px;
+    padding:50px;
+    background-color:#F7F8FA;
+}
+.our-product p{
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.our-product h2{
+    color:#1d5ea8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.42857143;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+.our-product h2 span{
+    color:#333333;
+}
+.our-product .card{
+    margin-bottom:16px;
+}
+.our-product .card h5{
+    font-size:15px;
+    text-transform:uppercase;
+    color:#333333;
+}
+.our-product .star-rating{
+    font-size:13px;
+    margin-bottom:12px;
+}
+.our-product .card span{
+    font-size:18px;
+    font-weight:600;
+}
+.our-product .overly{
+   visibility:hidden;
+   transition:.2s ease-in-out;
+}
+.our-product .card:hover .overly{
+    visibility:visible;
+    animation:fade .5s;
+}
+@keyframes fade{
+    0%{
+       opacity:0; 
+    }
+    100%{
+       opacity:1; 
+     }
+}
+@media(max-width:992px){
+    .our-product{
+        margin-top:100px;
+    }
+    .our-pricing{
+        height:230vh;
+    }
+}
+@media(max-width:768px){
+    .our-pricing{
+        height:320vh;
+    }
+}
+/* end our-product */
+
+/* start contact-us */
+.contact-us{
+    padding:50px;
+    background-color:#fafafa;
+}
+.contact-us h2{
+    margin-top:25px;
+    margin-bottom:25px;
+}
+.contact-us h2 span{
+    color:#1d5ea8;
+}
+.contact-us img{
+   margin-left:-40px; 
+}
+.contact-us input,
+.contact-us textarea{
+    margin-bottom:25px;
+}
+/* end contact-us */
+.footer{
+    background-color:#1d5ea8;
+    color:#fff;
+    padding:12px;
+}
+/* start footer */
+.footer p{
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+/* end footer */
+
+
+/*///////////////////////
+////////////////////////
+////////////////////////
+ the page of about us 
+////////////////////////
+////////////////////////
+//////////////////////*/
+
+/* start inner-header */
+.inner-header{
+    background-image:url(../images/bg11.jpeg);
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-position: top center;
+}
+.inner-header .breadcrumb{
+    background-color: transparent;
+    font-size: 15px;
+    padding-left: 0;
+    padding-top: 0;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    color: rgb(138, 138, 138);
+    border-radius: 4px;
+}
+.breadcrumb li.active {
+    color: #fff;
+}
+.inner-header h3{
+    font-size:36px;
+    text-transform:uppercase;
+    color:#1d5ea8;
+}
+.inner-header .hj{
+    margin:180px 0 0 50px;
+}
+/* end inner-header */
+
+/* start accordion and your client */
+.accordion-clients{
+    background-image:url(../images/2.png);
+    width: 100%;
+    height: 80vh;
+    padding-top:40px;
+    margin-top:40px;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: top center;
+}
+@media(max-width:992px){
+    .accordion-clients{
+        height:100vh;
+    }
+}
+@media(max-width:768px){
+    .accordion-clients{
+        height:150vh;
+    }
+}
+.accordion-clients h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.42857143;
+    color: #333333;
+    font-size:22px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.accordion-clients .accordion{
+    max-width:800px;
+    margin-bottom:30px;
+}
+.accordion-clients .accordion .contentBx{
+    position: relative;
+    margin-top:15px;
+}
+.accordion-clients .accordion .contentBx .label{
+    position: relative;
+    padding:10px;
+    background:#fff;
+    border:1px solid rgb(245, 245, 245);
+    color:#808080;
+    cursor: pointer;
+    padding-left:55px;
+}
+.accordion-clients .accordion .contentBx.active .label{
+    background:#1d5ea8;
+    border:1px solid #1d5ea8;
+    color:#fff;
+}
+.accordion-clients .accordion .contentBx .label::before{
+    content:'+';
+    position:absolute;
+    top:50%;
+    left:0px;
+    transform:translateY(-50%);
+    font-size:1.5em;
+    background-color:#eee;
+    color:#777777;
+    padding: 10px 14px;
+    font-size:23px;
+    font-weight:bold;
+    height:100%;
+}
+.accordion-clients .accordion .contentBx.active .label::before{
+    content:'-';
+    background-color:#000;
+    color:#fff;
+}
+.accordion-clients .accordion .contentBx .content{
+    position: relative;
+    background:#fff;
+    height:0;
+    overflow: hidden;
+    transition:0.5s;
+    overflow-y:auto;
+}
+.accordion-clients .accordion .contentBx.active .content{
+    height:150px;
+    padding:10px;
+}
+
+.accordion-clients .our-clients .client{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:20px;
+    background-color:#fff;
+    border:1px solid #eee;
+    margin-bottom:16px;
+}
+.accordion-clients .our-clients .client .image img{
+    border-radius:50%;
+}
+.accordion-clients .our-clients .client .text p{
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.accordion-clients .our-clients .client .text h5{
+    line-height: 1.7;
+    color: #666666;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+.accordion-clients .our-clients .client .text h5 span{
+    color: #126acf;
+}    
+/* end accordion and your client */
+/*///////////////////////
+////////////////////////
+////////////////////////
+ the page of mechanic
+////////////////////////
+////////////////////////
+//////////////////////*/
+.about-machanic{
+    margin-top:80px;
+}
+.about-machanic h5{
+    font-size:16px;
+    font-weight: 600;
+    line-height: 1.42857143;
+    color: #333333;
+}
+.about-machanic p{
+    color:#666;
+    font-size:14px;
+}
+.about-machanic .icons{
+    display:flex;
+}
+.about-machanic .icons i{
+    font-size:30px;
+    background-color: #fff;
+    color: #1d5ea8;
+    cursor: pointer;
+    margin-right:10px;
+}
+.about-machanic .icons i:hover{
+     color: #126acf;
+}
+/*///////////////////////
+////////////////////////
+////////////////////////
+ the page of pricing
+////////////////////////
+////////////////////////
+//////////////////////*/
+/* start our-pricing */
+.our-pricingg{
+    margin-top:0px;
+    padding:50px;
+    background-image:url(../images/p6.png);
+    width:100%;
+    height:130vh;
+    background-size:cover;
+}
+.our-pricingg p{
+    line-height: 1.7;
+    color: #818080;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom:40px;
+}
+.our-pricingg h2{
+    color:#1d5ea8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.42857143;
+    font-size:2rem;
+    margin-bottom:18px;
+}
+.our-pricingg h2 span{
+    color:#000000;
+}
+.our-pricingg .card{
+    margin-bottom:16px;
+    border:10px solid #f2f2f2;
+    transition:.3s ease-in-out;
+}
+.our-pricingg .card:hover{
+    transform:translateY(10px);
+}
+.our-pricingg .card h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.42857143;
+    color: #333333;
+    margin-top:40px;
+}
+.our-pricingg .card h1{
+    color: #1d5ea8;
+    font-size:46px;
+    font-family: 'Trirong', serif;
+    font-weight:700;
+}
+.our-pricingg .card h1 span{
+    color: #d9d9d9;
+    vertical-align: super;
+    font-size:24px;
+}
+.our-pricingg .card ul{
+    padding: 10px 0 10px 20px;
+}
+.our-pricingg .card ul li{
+    font-size: 12px;
+    padding: 10px 0;
+}
+@media(max-width:992px){
+    .our-pricingg{
+        height:230vh;
+    }
+}
+@media(max-width:768px){
+    .our-pricingg{
+        height:320vh;
+    }
+}
+/* end our-pricing */
+/*///////////////////////
+////////////////////////
+////////////////////////
+ the page of product
+////////////////////////
+////////////////////////
+//////////////////////*/
+
+/* start product cart */
+.product-cart{
+    margin-bottom:60px;
+}
+.product-cart .image img{
+    min-width:100%;
+}
+.product-cart .product-summary{
+    margin-top:80px;
+}
+@media(max-width:768px){
+    .product-cart .product-summary{
+        margin-top:0px;
+    }  
+}
+.product-cart .product-summary .dollar{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color:#666;
+}
+.product-cart .product-summary p{
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top:10px;
+}
+.product-cart .product-summary strong{
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.product-cart .product-summary .cart-form-wrapper{
+    display:flex;
+    margin-top:30px;
+}
+.product-cart .product-summary .cart-form-wrapper h6{
+    margin-right:40px;
+}
+.product-cart .product-summary .cart-form-wrapper .from-control{
+    display: block;
+    width: 50%;
+    height: 44px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+.single_add_to_cart_button{
+    margin-top:30px;
+}
+/* end product cart */
+
+/* start product description */
+.prod-desc .tab-pane{
+    padding:20px;
+}
+.prod-desc .tab-pane p{
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+}
+.prod-desc .tab-pane p{
+   margin-top:12px;
+}
+.prod-desc .tab-pane .span1{
+    margin-left:20px;
+    font-size:12px;
+    margin-bottom:20px;
+}
+/* end product description */
+.who-us .call-us,
+.who-us .address,
+.who-us .email{
+    margin-left:-30px;
+    padding-top:60px;
+    padding-bottom:60px;
+    text-align:center;
+    border-right: 1px solid #dcdcdc !important;
+    background-color:#f1f1f1;
+}
+.who-us .call-us i,
+.who-us .address i,
+.who-us .email i{
+    color:#126acf;
+    font-size: 2.57142857rem;
+}
+.who-us .call-us h4,
+.who-us .address h4,
+.who-us .email h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.42857143;
+    color: #333333;
+    font-size:18px;
+    margin-top:18px;
+}
+.who-us .call-us h6,
+.who-us .address h6,
+.who-us .email h6{
+    color: #808080;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 1.42857143;
+    font-size:13px;
+}
