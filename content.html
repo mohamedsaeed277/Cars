@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/Index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300;1,400;1,500;1,600&display=swap">
+</head>
+<body>
+<!-- start modal -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Make An Appoitment</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+        <h3>Vehicle Information</h3> 
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <label for="inputState">Car Name</label>
+              <select id="inputState" class="form-control">
+                <option selected>Audi</option>
+                <option>Citroen</option>
+                <option>Mazda</option>
+                <option>BMW</option>
+                <option>Nissan</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="inputState">Car Typw</label>
+              <select id="inputState" class="form-control">
+                <option selected>Suv</option>
+                <option>Truck</option>
+                <option>Van</option>
+                <option>Sports</option>
+                <option>Luxury</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">Car Year: 2010</label>
+            <input type="number" class="form-control" id="validationDefault01" placeholder="2010" value="2010" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">Car Model</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Type Model Here" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">Car Year: 2010</label>
+            <input type="date" class="form-control" id="picker" placeholder="2010" value="2010" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">Car Model</label> <br>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline1">1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">2</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">3</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">4</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">5</label>
+            </div>
+          </div>
+        </div>
+       </form>
+       <h3>Personal Information</h3>
+       <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Enter name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Enter Email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Your Phone">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Your Address">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Message"></textarea>
+          </div>
+        </div>
+        <button>Submit Now</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal -->
+<!-- start header -->
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="information col-lg-6 col-md-12">
+        <div class="phone">
+          <i class="fas fa-phone-alt color-blue"></i>
+          <span class="color-white">123-456-789</span>
+        </div>
+        <div class="email">
+          <i class="far fa-envelope color-blue"></i>
+          <span class="color-white">contact@yourdomin.com</span>
+        </div>
+      </div>
+      <div class="icons col-lg-6 col-md-12">
+        <div class="icon color-white">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <button class="quote" data-toggle="modal" data-target=".bd-example-modal-lg">Get A Quote Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end header -->
+
+<!-- start navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+  <a class="navbar-brand" href="Index.html">
+   <img src="images/logo-wide.png"> 
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="Index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about-us.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="feature.html">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mechanic.html">Mechanic</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="price.html">Price</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="product.html">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="content.html">Content</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+<!-- end navbar -->
+
+<!-- start inner header -->
+<div class="inner-header">
+  <div class="row">
+    <div class="col-md-12">
+    <div class="hj">
+      <h3>content</h3>  
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="Index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Content</li>
+        </ol>
+      </nav>
+    </div>
+    </div>  
+  </div>  
+</div>
+<!-- end inner header -->
+
+<!-- strat who us -->
+<div class="who-us">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-4">
+    <div class="call-us">
+     <i class="fa fa-phone"></i>
+     <h4>Call Us</h4>
+     <h6>Phone: +262 695 2601</h6>
+    </div>   
+   </div>
+   <div class="col-md-4">
+    <div class="address">
+     <i class="fas fa-map-marker-alt"></i>
+     <h4>Address</h4>
+     <h6>121 King Street, Australia</h6>
+    </div>    
+   </div>
+   <div class="col-md-4">
+    <div class="email">
+     <i class="fa fa-envelope"></i>
+     <h4>Email</h4>
+     <h6>you@yourdomain.com</h6>
+    </div>
+   </div>
+  </div>   
+ </div>
+</div>
+<!-- end who us -->
+
+<!-- start contact-us -->
+<div class="contact-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-4">
+       <img src="images/a1.png"> 
+      </div>
+      <div class="col-md-12 col-lg-8">
+        <h2>Get A Free <span>Service Now!</span></h2>
+        <form>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Enter Name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Enter Phone">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <select class="custom-select">
+                <option selected>Select Your Vehicel Model</option>
+                <option value="1">Toyota</option>
+                <option value="2">Jeep</option>
+                <option value="3">Lexus</option>
+              </select>
+            </div>
+            <div class="col">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Enter Message"></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <a href="#" class="btn btn-colored btn-theme-colored text-uppercase">Send Your Message</a>
+              <a href="#" class="btn btn-colored btn-theme-colored text-uppercase">Reset</a>
+            </div>
+          </div>
+        </form> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end contact-us -->
+<div class="footer">
+  <p class="text-center">&copy; 2021 AutoCare.com. All rights reserved.</p>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Index.js"></script>
+</body>
+</html>
