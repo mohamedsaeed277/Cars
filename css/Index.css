@@ -39,6 +39,13 @@ h3{
 .color-ban{
     color:darkgrey;
 }
+@media(max-width:992px){
+    .color-white,
+    .color-blue,
+    .color-ban{
+        font-size:23px;
+    }
+}
 /* start modal */
 .modal-header{
     background-color:#1d5ea8;
@@ -73,7 +80,33 @@ h3{
 }
 .custom-control {
     padding-left: 2.5rem;
-}    
+}
+@media(max-width:992px){
+    .modal-content{
+        width:880px;
+    } 
+    .modal-dialog{
+        max-width:870px;
+    }
+    .modal-body h3{
+        font-size:30px;
+    }
+    .modal-body form input,
+    .modal-body form .form-control{
+        font-size:28px;
+    }
+    .modal-body form label{
+        font-size:26px;
+    }
+    .modal-header h5,
+    .modal-header .close{
+        font-size:32px;
+    }
+    .modal-body form button{
+        padding:16px 30px;
+        font-size:23px;
+    }
+}
 /* end modal */
 
 /* start header */
@@ -111,14 +144,20 @@ h3{
 }
 @media(max-width:992px){
  .header .information{
-     margin-top:10px;
-     margin-bottom:10px;
-     margin-left:180px;
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left:180px;
     }
     .header .icons{
         margin-left:-138px;  
         margin-bottom:10px;
    }
+   .header .icons .icon i{
+        font-size:30px;
+} 
+    .header .icons .quote{
+        padding:15px 26px;
+    }
 }
 @media(max-width:768px){
     .header .information{
@@ -136,6 +175,11 @@ h3{
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color:#276bb9;
+}
+@media(max-width:992px){
+    .navbar-light .navbar-nav .nav-link{
+        font-size:28px;
+    }
 }
 /* end navbar */
 
@@ -205,7 +249,7 @@ h3{
     border-color: #fff;
 }
 .imgs1{
-    margin-bottom:15px;  
+    margin-bottom:15px;
 }
 .imgs2{
     width:310px;
@@ -219,6 +263,17 @@ h3{
    .imgs2{
     width:260px;
     margin-left:90px; 
+   }
+   .repair-cen h3{
+       font-size:28px;
+   }
+   .repair-cen .paragraph1{
+    font-size:22px;
+}
+.repair-cen .btn1,
+.repair-cen .btn2{
+    font-size: 17px;
+    padding: 14px 30px;
 }
 }
 @media(max-width:768px){
@@ -283,13 +338,6 @@ h3{
     color:#1d5ea8;
 }
 .our-features .featur .texts h3{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    line-height: 1.42857143;
-    color: #333333;
-    font-size:16px;
-}
-.our-features .featur .texts h3{
     line-height: 1.7;
     color: #666666;
     font-size: 14px;
@@ -297,9 +345,24 @@ h3{
     text-align:left;
 }
 @media(max-width:992px){
+    .our-features p{
+        font-size:18px;
+    }
+    .our-features h2{
+        font-size:3rem;
+    }
     .our-features .our-row{
         display:flex;
         flex-direction:column;
+    }
+    .our-features .featur .icons{
+        font-size: 50px;
+    }
+    .our-features .featur .texts h3{
+        font-size:26px;
+    }
+    .our-features .featur .texts p{
+        font-size:20px;
     }
 }
 /* start clients */
@@ -352,12 +415,23 @@ h3{
     line-height: 1.42857143;
     font-size:14px;
 }
+@media(max-width:992px){
+    .clients{
+        height:50vh; 
+     }
+     .clients .clien .text i{
+        font-size:3.28571429rem;
+    }
+    .clients .clien .text h2{
+        font-size: 3.57142857rem;
+    }
+    .clients .clien .text h5{
+        font-size:16px;
+    }
+}
 @media(max-width:768px){
    .Dnone{
       display:none; 
-   }
-   .clients{
-      height:90vh; 
    }
    .clients .clien .text{
     margin-top:20px; 
@@ -410,7 +484,24 @@ h3{
 .our-mechanic .card-body .icons i:hover{
      color: #126acf;
 }
-/* end .our-mechanic */
+@media(max-width:992px){
+    .our-mechanic p{
+        font-size: 18px;
+    }
+    .our-mechanic h2{
+        font-size:3rem;
+    }
+    .our-mechanic .card-body h5{
+       font-size:28px;
+    }
+    .our-mechanic .card-body h6{
+        font-size:26px;
+    }
+    .our-mechanic .card-body .icons i{
+        font-size:40px;
+    }
+}
+/* end our-mechanic */
 
 /* start our-pricing */
 .our-pricing{
@@ -481,8 +572,33 @@ h3{
     color: #fff;
     background-color: #1567c4;
 }
+@media(max-width:992px){
+    .our-pricing{
+        height:330vh;
+    }
+    .our-pricing p{
+        font-size:20px;
+    }
+    .our-pricing h2{
+        font-size:3rem;
+    }
+    .our-pricing .card h1{
+        font-size:56px;
+    }
+    .our-pricing .card h1 span{
+        font-size:30px;
+    }
+    .our-pricing .card p{
+        font-size:26px;
+    }
+    .our-pricing .card ul li{
+        font-size:18px;
+    }
+    .btn-theme-colored{
+       padding:16px 22px;
+    }
+}
 /* end our-pricing */
-
 .our-product{
     margin-top:80px;
     padding:50px;
@@ -541,13 +657,20 @@ h3{
     .our-product{
         margin-top:100px;
     }
-    .our-pricing{
-        height:230vh;
+    .our-product p{
+        font-size:20px;
     }
-}
-@media(max-width:768px){
-    .our-pricing{
-        height:320vh;
+    .our-product h2{
+        font-size:3rem;
+    }
+    .our-product .card h5{
+        font-size:24px;
+    }
+    .our-product .star-rating{
+        font-size:20px;
+    }
+    .our-product .card span{
+        font-size:26px;
     }
 }
 /* end our-product */
@@ -571,16 +694,35 @@ h3{
 .contact-us textarea{
     margin-bottom:25px;
 }
+@media(max-width:992px){
+    .contact-us h2{
+        font-size:44px;
+    }
+    .contact-us input,
+    .contact-us textarea,
+    .contact-us .custom-select{
+      font-size:26px;
+    }
+    .contact-us .btn{
+        font-size:26px;
+    }
+}
 /* end contact-us */
+
+/* start footer */
 .footer{
     background-color:#1d5ea8;
     color:#fff;
     padding:12px;
 }
-/* start footer */
 .footer p{
     margin: auto;
     font-family: 'Open Sans', sans-serif;
+}
+@media(max-width:992px){
+    .footer p{
+        font-size:26px;
+    }
 }
 /* end footer */
 
@@ -626,6 +768,14 @@ h3{
 .inner-header .hj{
     margin:180px 0 0 50px;
 }
+@media(max-width:992px){
+    .inner-header h3{
+        font-size:50px;
+    }
+    .inner-header .breadcrumb{
+        font-size:28px;
+    }
+}
 /* end inner-header */
 
 /* start accordion and your client */
@@ -638,16 +788,6 @@ h3{
     background-size: cover;
     background-repeat: repeat-y;
     background-position: top center;
-}
-@media(max-width:992px){
-    .accordion-clients{
-        height:100vh;
-    }
-}
-@media(max-width:768px){
-    .accordion-clients{
-        height:150vh;
-    }
 }
 .accordion-clients h3{
     font-family: 'Raleway', sans-serif;
@@ -739,6 +879,37 @@ h3{
 .accordion-clients .our-clients .client .text h5 span{
     color: #126acf;
 }    
+@media(max-width:992px){
+    .accordion-clients{
+        height:120vh;
+    }
+    .accordion-clients h3{
+        font-size:35px;
+    }
+    .accordion-clients .accordion .contentBx .label{
+        padding:16px;
+        font-size:23px;
+        padding-left:65px;
+    }
+    .accordion-clients .accordion .contentBx .label::before{
+        font-size:28px;
+        height:80%;
+    }
+    .accordion-clients .accordion .contentBx .content p{
+       font-size:20px;
+    }
+    .accordion-clients .our-clients .client .text p{
+        font-size:16px;
+    }
+    .accordion-clients .our-clients .client .text h5{
+        font-size:16px;
+    }
+}
+@media(max-width:768px){
+    .accordion-clients{
+        height:150vh;
+    }
+}
 /* end accordion and your client */
 /*///////////////////////
 ////////////////////////
@@ -772,6 +943,20 @@ h3{
 }
 .about-machanic .icons i:hover{
      color: #126acf;
+}
+@media(max-width:992px){
+    .about-machanic h4{
+        font-size:36px;
+    }
+    .about-machanic h5{
+        font-size:30px;
+    }
+    .about-machanic p{
+        font-size:22px;
+    }
+    .about-machanic .icons i{
+        font-size:46px;
+    }
 }
 /*///////////////////////
 ////////////////////////
@@ -842,7 +1027,28 @@ h3{
 }
 @media(max-width:992px){
     .our-pricingg{
-        height:230vh;
+        height:330vh;
+    }
+    .our-pricingg p{
+        font-size:20px;
+    }
+    .our-pricingg h2{
+        font-size:3rem;
+    }
+    .our-pricingg .card h1{
+        font-size:56px;
+    }
+    .our-pricingg .card h1 span{
+        font-size:30px;
+    }
+    .our-pricingg .card p{
+        font-size:26px;
+    }
+    .our-pricingg .card ul li{
+        font-size:18px;
+    }
+    .btn-theme-colored{
+       padding:16px 22px;
     }
 }
 @media(max-width:768px){
@@ -868,11 +1074,6 @@ h3{
 }
 .product-cart .product-summary{
     margin-top:80px;
-}
-@media(max-width:768px){
-    .product-cart .product-summary{
-        margin-top:0px;
-    }  
 }
 .product-cart .product-summary .dollar{
     font-size: 20px;
@@ -915,6 +1116,38 @@ h3{
 .single_add_to_cart_button{
     margin-top:30px;
 }
+@media(max-width:992px){
+    .product-cart .product-summary .dollar{
+        font-size: 33px;
+    }
+    .product-cart .product-summary h2{
+        font-size:40px;
+    }
+    .product-cart .product-summary p{
+        font-size:20px;
+    }
+    .product-cart .product-summary strong{
+        font-size:20px;
+    }
+    .product-cart .product-summary .cart-form-wrapper h6{
+        font-size:26px;
+    }
+    .product-cart .product-summary .cart-form-wrapper .from-control,
+    .product-cart .product-summary .cart-form-wrapper input{
+        width: 60%;
+        height:54px;
+        font-size:22px;
+    }
+    .single_add_to_cart_button{
+        padding:18px 30px;
+        font-size:22px;
+    }
+}
+@media(max-width:768px){
+    .product-cart .product-summary{
+        margin-top:0px;
+    }  
+}
 /* end product cart */
 
 /* start product description */
@@ -925,16 +1158,33 @@ h3{
     line-height: 1.7;
     color: #666666;
     font-size: 14px;
-}
-.prod-desc .tab-pane p{
-   margin-top:12px;
+    margin-top:12px;
 }
 .prod-desc .tab-pane .span1{
     margin-left:20px;
     font-size:12px;
     margin-bottom:20px;
 }
+@media(max-width:992px){
+    .prod-desc .nav-item{
+        font-size:30px;
+    }
+    .prod-desc .tab-pane h3{
+        font-size:33px;
+    }
+    .prod-desc .tab-pane p{
+        font-size:22px;
+    }
+    .prod-desc .tab-pane .table tr th,
+    .prod-desc .tab-pane .table tr td{
+        font-size:26px;
+    }
+    .prod-desc .tab-pane .span1{
+        font-size:18px;
+    }
+}
 /* end product description */
+
 .who-us .call-us,
 .who-us .address,
 .who-us .email{
@@ -969,4 +1219,21 @@ h3{
     font-weight: 600;
     line-height: 1.42857143;
     font-size:13px;
+}
+@media(max-width:992px){
+    .who-us .call-us i,
+    .who-us .address i,
+    .who-us .email i{
+    font-size: 3.57142857rem;
+    }
+    .who-us .call-us h4,
+    .who-us .address h4,
+    .who-us .email h4{
+        font-size:28px;
+    }
+    .who-us .call-us h6,
+    .who-us .address h6,
+    .who-us .email h6{
+        font-size:18px;
+    }
 }
